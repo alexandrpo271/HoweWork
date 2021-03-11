@@ -62,3 +62,13 @@ const data = [
     type: PRODUCT_TYPE.VEGETABLE,
   },
 ]
+
+console.log(data);
+let askProductType = prompt('Check your type');
+let massive = [];
+for (let i = 0; i < data.length; i++) {
+  if(askProductType == data[i].type) {
+    massive.push(data[i])
+    console.log(data[i])
+  }
+}
